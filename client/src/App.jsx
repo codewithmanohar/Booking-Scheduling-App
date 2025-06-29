@@ -1,6 +1,7 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
+import "./App.css";
 
 export default function App() {
   const [count, setCount] = useState(0);
@@ -44,8 +45,14 @@ function Navbar() {
 
 function Hero() {
   return (
-    <div classname="hero">
-      <div classname="content">hello everyone</div>
+    <div className="hero">
+      <div className="content">
+        <h1> Booking Menu </h1>
+        <hr />
+        <p> This is the paragraph.... </p>
+        <img src="./schudle.jpg" />
+        <button>Confirm The Booking </button>
+      </div>
     </div>
   );
 }
