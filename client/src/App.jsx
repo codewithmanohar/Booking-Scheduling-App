@@ -1,58 +1,22 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
+import Home from "./pages/Home";
+import { BrowserRouter, Route, Routes } from "react-router";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import PageNotFound from "./pages/PageNotFound";
+import TrainSearch from "./components/TrainSearch";
 
 export default function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <Main />
-    </>
-  );
-}
-
-function Main() {
-  return (
-    <div
-      style={{
-        height: "100vh",
-        backgroundColor: "gray",
-      }}
-    >
-      <Navbar />
-      <Hero />
-    </div>
-  );
-}
-
-function Navbar() {
-  return (
-    <h1
-      style={{
-        backgroundColor: "blue",
-        color: "white",
-        textAlign: "center",
-        padding: "8px",
-        fontWeight: "500",
-      }}
-    >
-      Welcome to Booking and Schudeling app
-    </h1>
-  );
-}
-
-function Hero() {
-  return (
-    <div className="hero">
-      <div className="content">
-        <h1> Booking Menu </h1>
-        <hr />
-        <p> This is the paragraph.... </p>
-        <img src="./schudle.jpg" />
-        <button>Confirm The Booking </button>
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="signup" element={<Signup />} />
+        <Route path="login" element={<Login />} />
+        <Route path="train-search" element={<TrainSearch />} />
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 }

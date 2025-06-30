@@ -1,0 +1,32 @@
+.container {
+  background: gray;
+  width: 500px;
+  min-height: 400px;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 12px;
+}
+.container .searchForm {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.container .searchForm h1 {
+  margin-bottom: 30px;
+  text-align: center;
+  color: white;
+  font-weight: 400px;
+  text-decoration: underline;
+}
+.container .searchForm input,
+.container .searchForm label {
+  margin: 10px 20px;
+  height: 30px;
+  border-radius: 10px;
+  outline: none;
+}
+.container .searchForm button {
+  margin: 20px auto;
+  padding: 3px 7px;
+  font-size: 1.1rem;
+}
