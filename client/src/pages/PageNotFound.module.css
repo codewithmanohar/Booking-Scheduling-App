@@ -1,0 +1,10 @@
+.container {
+  height: 100vh;
+  background: black;
+  color: white;
+  font-size: 45px;
+  font-weight: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

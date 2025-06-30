@@ -1,0 +1,44 @@
+.nav {
+  display: flex;
+  background: purple;
+  justify-content: space-between;
+  height: 50px;
+  font-family: arial;
+}
+.nav img {
+  width: 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px 20px;
+}
+.nav .logoContainer {
+  height: auto;
+  display: flex;
+}
+.nav h1 {
+  font-size: 30px;
+  margin: auto;
+  color: grey;
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  width: 400px;
+  justify-content: space-evenly;
+}
+.nav ul li {
+  text-align: center;
+  margin: auto;
+}
+.nav ul li a {
+  text-decoration: none;
+  background: orange;
+  padding: 5px 10px;
+  line-height: 1;
+  border-radius: 10px;
+}
+.nav ul li a:hover {
+  border: 1px solid black;
+  color: white;
+  background: green;
+}
